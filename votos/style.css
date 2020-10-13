@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+/* Remove Arrows/Spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  padding: 16px;
+  width: 500px;
+  margin: auto;
+  font-family: "Roboto";
+}
+
+input {
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Form */
+
+#add-candidate:after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  margin: 18px 0px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+}
+
+#add-candidate header {
+  display: flex;
+  justify-content: center;
+}
+
+#add-candidate #form {
+  display: flex;
+}
+#add-candidate #form input {
+  flex: 1;
+  margin-right: 16px;
+}
+
+/* Candidates card */
+
+.card header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background: #ededed;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.card input {
+  height: 32px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.card header h3 {
+  margin: 0px;
+}
+
+.card:nth-child(n + 1) {
+  margin-bottom: 32px;
+}

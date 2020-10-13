@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Análise de Votos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="add-candidate">
+    <header id="title">
+      <h2>Adicionar Candidato</h2>    
+    </header>
+    <section id="form">
+      <label for="txtCandidateName">
+        Nome
+        <input type="text" name="txtCandidateName" id="txtCandidateName">
+      </label>
+      <label for="txtCandidateVotes">
+        Votos
+        <input type="number" name="txtCandidateVotes" id="txtCandidateVotes">
+      </label>
+      <button id="btn-add-candidate">Adicionar Candidato</button>
+    </section>
+  </div>
+  <div id="candidates-container">
+    <section class="card">
+      <header>
+        <h3 id="name">Candidato 1</h3> <input type="number" name="txtCandidateVotes" id="txtCandidateVotes">
+      </header>
+      <div id="graph"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
