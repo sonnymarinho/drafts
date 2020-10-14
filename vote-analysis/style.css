@@ -44,37 +44,87 @@ button:hover {
 
 /* Form */
 
-#add-candidate:after {
-  content: "";
+#add-votes-container {
   display: flex;
   flex-direction: column;
-  margin: 18px 0px;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 8px;
 }
 
-#add-candidate header {
+.add, header, #form, label {
+  display: flex;
+}
+
+.add {
+  flex-direction: column;
+  flex: 1;
+}
+
+.add label {
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  flex: 1;
+}
+
+.add label input{
+  margin: 0 16px;
+  width: 100%;
+}
+
+.add button {
+  height: 32px;
+  width: 32px;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.add button:focus {
+  color: white;
+  background: black;
+}
+
+
+.null-votes {
+  margin-top: 32px;
+}
+
+#add-votes-container:after {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+}
+
+/* Info */
+
+#info {
   display: flex;
   justify-content: center;
 }
 
-#add-candidate #form {
+#info ul{
+  text-decoration: none;
+  list-style: none;
+  
   display: flex;
+  padding: 0;
 }
-#add-candidate #form input {
-  flex: 1;
+
+#info li:first-child {
   margin-right: 16px;
 }
 
 /* Candidates card */
 
-.card header {
+.card header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   background: #ededed;
-  padding: 32px;
+  padding: 16px;
   border-radius: 8px;
 }
 

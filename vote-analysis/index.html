@@ -6,26 +6,58 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="add-candidate">
-    <header id="title">
-      <h2>Adicionar Candidato</h2>    
-    </header>
-    <section id="form">
-      <label for="txtCandidateName">
-        Nome
-        <input type="text" name="txtCandidateName" id="txtCandidateName">
-      </label>
-      <label for="txtCandidateVotes">
-        Votos
-        <input type="number" name="txtCandidateVotes" id="txtCandidateVotes">
-      </label>
-      <button id="btn-add-candidate">Adicionar Candidato</button>
-    </section>
-  </div>
+  <div id="add-votes-container">
+    <div class="add candidate">
+      <header id="title">
+        <span>Adicionar Candidato</span>    
+      </header>
+      <div id="form">
+        <label for="txtCandidateName">
+          Nome
+          <input
+          type="text"
+          name="candidate-name-txt-field"/>
+        </label>
+        <label for="txtCandidateVotes">
+          Votos
+          <input
+          type="number"
+          name="candidate-votes-txt-field"/>
+        </label>
+        <button name="btn-add-candidate">+</button>
+      </div>
+    </div>
+  
+      <div class="add null-votes">
+        <header id="title">
+          <span>Adicionar Votos Nulos</span>    
+        </header>
+        <div id="form">
+          <label for="txtCandidateVotes">
+            Votos
+            <input
+            type="number"
+            name="null-votes-txt-field"/>
+          </label>
+        </div >
+      </div>
+
+      <div id="info">
+        <ul>
+          <li>total: <span id="total-votes-info-field"></span></li>
+          <li>nulos: <span id="total-null-info-field"></span></li>
+        </ul>
+      </div>
+    </div>
+
+
   <div id="candidates-container">
     <section class="card">
       <header>
-        <h3 id="name">Candidato 1</h3> <input type="number" name="txtCandidateVotes" id="txtCandidateVotes">
+        <h3 name="candidate-name">
+          Candidato 1
+        </h3>
+        <input type="number" name="candidate-votes">
       </header>
       <div id="graph"></div>
     </section>
